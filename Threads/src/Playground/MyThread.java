@@ -21,7 +21,7 @@ public class MyThread implements Runnable{
 			t2.run();
 			
 			try {
-				t2.sleep(500);
+				Thread.sleep(500);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
