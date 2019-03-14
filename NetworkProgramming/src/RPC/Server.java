@@ -23,14 +23,62 @@ public class Server {
 		
 		BufferedReader receiveRead = new BufferedReader(new InputStreamReader(istream));
 		
-		String value = receiveRead.readLine();
+		String var1, var2, operator;
 		
-		if(value!= null) {
+		var1 = receiveRead.readLine();
+		var2 = receiveRead.readLine();
+		
+		operator = receiveRead.readLine();
+		
+		int a = Integer.parseInt(var1);
+		int b = Integer.parseInt(var2);
+		
+		int result = 0;
+		
+		if(operator != null) {
 			
-			System.out.println(value);
+			switch(operator) {
+			case "+":
+				result = a+b;
+				break;
+			case "-":
+				result = a-b;
+				break;
+			case "/":
+				result = a/b;
+				break;
+			case "*":
+				result = a*b;
+				break;
+			default:
+				break;
+			}
+			
+			
+			/*if(operator.compareTo("+")==0) {
+				
+				result = a + b;
+			}
+			
+			if(operator.compareTo("-")==0) {
+				
+				result = a - b;
+				
+			}
+			
+			if(operator.compareTo("*")==0) {
+				result = a * b;
+			}
+			
+			if(operator.compareTo("/")==0) {
+				result = a / b;
+			}*/
+			
+			
+			
 		}
 		
-		pwrite.println(value);
+		pwrite.println(result);
 		
 		System.out.flush();
 		

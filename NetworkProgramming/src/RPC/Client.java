@@ -23,13 +23,26 @@ public class Client {
 		
 		System.out.println(("Client is ready!!"));
 		
-		String temp, receiveMessage;
+		String receiveMessage, a, b, operator;
 		
-		System.out.println("Enter the message: ");
+		System.out.println("Enter the value of a:");
 		
-		temp = keyRead.readLine();
+		a = keyRead.readLine();
 		
-		pwrite.println(temp);
+		pwrite.println(a);
+		
+		System.out.println("Enter the value of b:");
+		
+		b = keyRead.readLine();
+		
+		pwrite.println(b);
+		
+		System.out.println("Enter the operation you want to do (+, -, /, *) :");
+		
+		operator = keyRead.readLine();
+		
+		pwrite.println(operator);
+		
 		
 		if ((receiveMessage = receiveRead.readLine()) != null) {
 			
