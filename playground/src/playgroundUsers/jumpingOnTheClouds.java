@@ -8,13 +8,14 @@ public class jumpingOnTheClouds {
 	static int jumpingOnClouds(int[] c) {
 		
 		int nrOfJumps = 0;
-		
-		for(int i=0;i<c.length;i++) {
-			
-			if(c[i] == 0) {
 				
-				nrOfJumps++;
-			}
+		for(int i=1;i<c.length;i++) {
+						
+				if(i<c.length-1 && c[i+1] == 0) {
+						
+					nrOfJumps++;
+				
+				}
 			
 		}
 		
