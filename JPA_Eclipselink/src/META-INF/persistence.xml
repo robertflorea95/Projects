@@ -10,7 +10,7 @@
 			<property name ="javax.persistence.jdbc.user" value="DataBaseAdmin"/>
 			<property name ="javax.persistence.jdbc.password" value="manage"/>
 			<property name ="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-			<property name ="exclipselink.logging.level" value="FINE"/>
+			<property name ="eclipselink.logging.level" value="FINE"/>
 			<property name ="eclipselink.ddl-generation" value="create-tables"/>
 		</properties>
 		
