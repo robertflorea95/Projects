@@ -1,32 +1,25 @@
 package playgroundUsers;
 
-import java.util.ArrayList;
-
 public class ArraysLeftRotation {
 
 	static int[] rotLeft(int[] a, int d) {
-		int rotate = 0;
-		int firstElement = 0;
+		
 		if(d != 0) {
-			
-			while(rotate < d) {
 				
-				firstElement = a[0];
+				d %= a.length;
+				
+				int[] ret = new int[a.length];
 				
 				for(int i = 0;i<a.length;i++) {
 					
-					if((i+1) != a.length) {
-						a[i] = a[i+1];
-					}
-					else {
-						a[a.length-1]=firstElement;
-					}
+					ret[i] = a[(i+d) % a.length];
+					
 			}
-				rotate++;
-		}
-			return a;
+				return ret;
+			
 			
     }else return a;
+		
 
 }
 	
