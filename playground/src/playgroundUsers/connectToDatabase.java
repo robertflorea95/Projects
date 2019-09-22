@@ -32,9 +32,11 @@ public class connectToDatabase {
 			
 			while(result.next()) {
 				
-				System.out.println("Terminal ID:"+result.getString("TERMINALID")+"\n"+"NAME:"+result.getString("NAME"));
+				System.out.println("Terminal ID:"+result.getString("TERMINALID")+"|"+"NAME:"+result.getString("NAME"));
 				
 			}
+			
+			result.close();
 			
 		}catch(Exception e){
 			

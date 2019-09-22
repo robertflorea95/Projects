@@ -4,21 +4,23 @@ public class MyThread implements Runnable{
 	
 	String name;
 	
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Thread myThread = new Thread();
-		myThread.setName("Jenny");
+	public MyThread(String s) {
+		// TODO Auto-generated constructor stub
 		
-		Thread t2 = new Thread();
-		t2.setName("from the block");
+		this.name = s;
+		
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
 		
 		int i = 0;
 		
 		while (i < 10) {
-			myThread.run();
 			
-			t2.run();
+			System.out.println(name+ " " + i);
+			
 			
 			try {
 				Thread.sleep(500);
@@ -29,18 +31,24 @@ public class MyThread implements Runnable{
 			
 			i++;
 		}
-		
-		
 	}
 
-	@Override
-	public void run() {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
-		System.out.println("Mesaj");
+		
+		MyThread r = new MyThread("runnable");
+		
+		MyThread r2 = new MyThread("r2");
+		
+		Thread t2 = new Thread(r2);
+		
+		Thread t1 = new Thread(r);
+		
+		//t1.start();
+		
+		t2.run();
+		
 	}
-
-	
-
 
 
 }
