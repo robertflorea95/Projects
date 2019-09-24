@@ -1,6 +1,8 @@
 package Game;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -19,6 +21,7 @@ public class TicTacToe extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
+		
 		Button btn1 = new Button();
 		
 		btn1.setText("");
@@ -135,6 +138,7 @@ public class TicTacToe extends Application{
 	int ActivePlayer = 1;
 	
 	int buttonFlag = 0;
+	
 
 	private void playGame(int cellId, Button selectedButton) {
 		// TODO Auto-generated method stub
@@ -256,10 +260,12 @@ public class TicTacToe extends Application{
 		}
 		
 		
+		
 	}
 
 	public static void main(String args[]) {
-		launch(args);
+		
+		TicTacToe.launch(args);
 		
 	}
 	
