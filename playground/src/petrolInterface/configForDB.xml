@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<dataBaseName>fuelstations</dataBaseName>
+	<hostName>127.0.0.1</hostName>
+	<port>3306</port>
+	<user>Administrator</user>
+	<password>manageDb</password>
+</config>
+	
+	
