@@ -1,5 +1,6 @@
 package petrolInterface;
 
+import java.nio.file.Paths;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -15,7 +16,7 @@ public class testClass {
 		// TODO Auto-generated method stub
 		
 		//Scanner input = new Scanner(System.in);
-		String path = "C:\\Users\\rober\\git\\repository\\playground\\src\\petrolInterface\\configForDB.xml";
+		/*String path = "C:\\Users\\rober\\git\\repository\\playground\\src\\petrolInterface\\configForDB.xml";
 		
 		List<Element> config = getLogInDataForDB.getConfig(path);
 						
@@ -30,8 +31,23 @@ public class testClass {
 			System.out.println("COUNTRY: " + SQLData.get(i).getCountry());
 			System.out.println("-------------------------------------");
 			
+		}*/
+		
+		final java.nio.file.Path path = Paths.get("C:\\Users\\rober\\git\\repository\\playground\\src\\petrolInterface\\configForDB.xml");
+		
+		List<Element> config = getLogInDataForDB.getConfig(path.toString());
+		
+			
+		ArrayList<FuelStations> fs = getDataFromDB.getDataFromDataBase(config);
+		
+		for(FuelStations i : fs) {
+			
+			System.out.println(fs.toString());
+			
 		}
+			
 		
 	}
+	
 
 }
