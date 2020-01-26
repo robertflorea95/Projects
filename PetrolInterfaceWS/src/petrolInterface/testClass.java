@@ -16,7 +16,7 @@ public class testClass {
 		// TODO Auto-generated method stub
 		
 		//Scanner input = new Scanner(System.in);
-		/*String path = "C:\\Users\\rober\\git\\repository\\playground\\src\\petrolInterface\\configForDB.xml";
+		/*String path = "C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\PetrolInterfaceWS\WEB-INF\classes\petrolInterface\configForDB.xml";
 		
 		List<Element> config = getLogInDataForDB.getConfig(path);
 						
@@ -33,7 +33,7 @@ public class testClass {
 			
 		}*/
 		
-		final java.nio.file.Path path = Paths.get("C:\\Users\\rober\\git\\repository\\playground\\src\\petrolInterface\\configForDB.xml");
+		final java.nio.file.Path path = Paths.get("C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\PetrolInterfaceWS\\WEB-INF\\classes\\petrolInterface\\configForDB.xml");
 		
 		List<Element> config = getLogInDataForDB.getConfig(path.toString());
 		

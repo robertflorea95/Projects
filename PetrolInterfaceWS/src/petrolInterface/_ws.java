@@ -8,7 +8,7 @@ import org.dom4j.Element;
 
 public class _ws {
 	
-static private final java.nio.file.Path path = Paths.get("C:\\Users\\rober\\git\\repository\\playground\\src\\petrolInterface\\configForDB.xml");
+static private final java.nio.file.Path path = Paths.get("C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\PetrolInterfaceWS\\WEB-INF\\classes\\petrolInterface\\configForDB.xml");
 	
 	static List<Element> config = getLogInDataForDB.getConfig(path.toString());
 	

@@ -16,7 +16,7 @@ public class getDataFromDB {
 	
 	private static ArrayList<FuelStations> fsArray = new ArrayList<FuelStations>();
 	
-	private static String path = "C:\\Users\\rober\\git\\repository\\playground\\src\\petrolInterface\\configForDB.xml";	
+	private static String path = "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\PetrolInterfaceWS\\WEB-INF\\classes\\petrolInterface\\configForDB.xml";	
 	
 	public static ArrayList<FuelStations> getDataFromDataBase(List<Element> config) {
 		
@@ -33,7 +33,7 @@ public class getDataFromDB {
 	String password = config.get(4).getStringValue();
 	
 	
-	String JDBC_DRIVER ="com.mysql.jdbc.Driver";
+	String JDBC_DRIVER ="com.mysql.cj.jdbc.Driver";
 	String DB_URL = "jdbc:mysql://" + hostname + ":" + port + "/" + dbName;
 	
 	Connection conn = null;
@@ -42,7 +42,7 @@ public class getDataFromDB {
 	ResultSet result = null;
 	
 	try {
-		Class.forName("com.mysql.jdbc.Driver");
+		Class.forName("com.mysql.cj.jdbc.Driver");
 		
 		System.out.println("Connecting to the database...");
 		
