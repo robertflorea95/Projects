@@ -9,5 +9,6 @@
 	<classpathentry kind="lib" path="lib/ojdbc7-12.1.0.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/rober/git/repository/playground/src/petrolInterface/dom4j-2.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Program Files (x86)/MySQL/Connector J 8.0/mysql-connector-java-8.0.18.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/Java/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

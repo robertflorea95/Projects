@@ -18,7 +18,7 @@ public class Employee {
 	private double salary;
 	private String deg;
 	
-	public Employee(int eid, String name, double salary, String deg) {
+	public <String> Employee(int eid, String name, double salary, String deg) {
 		
 		super();
 		this.eid = eid;
