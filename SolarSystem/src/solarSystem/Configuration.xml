@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<CelestialBody>
+		<name>Sun</name>
+		<type>star</type>
+		<color>yellow</color>
+		<parent>none</parent>
+		<radius>100</radius>
+		<velocity>0.000</velocity>
+		<distanceToParent>0</distanceToParent>
+		<xCoord>500</xCoord>
+		<yCoord>500</yCoord>
+	</CelestialBody>
+	<CelestialBody>
+		<name>Mercury</name>
+		<type>planet</type>
+		<color>grey</color>
+		<parent>Sun</parent>
+		<radius>5</radius>
+		<velocity>0.002</velocity>
+		<distanceToParent>15</distanceToParent>
+		<xCoord>57.300</xCoord>
+		<yCoord>35.257</yCoord>
+	</CelestialBody>
+	<CelestialBody>
+		<name>Earth</name>
+		<type>planet</type>
+		<color>blue</color>
+		<parent>Sun</parent>
+		<radius>10</radius>
+		<velocity>0.005</velocity>
+		<distanceToParent>30</distanceToParent>
+		<xCoord>60.850</xCoord>
+		<yCoord>45.360</yCoord>
+	</CelestialBody>
+</config>
