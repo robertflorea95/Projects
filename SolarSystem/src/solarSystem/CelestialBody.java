@@ -5,22 +5,24 @@ public class CelestialBody {
 	private String name;
 	private String type;
 	private String color;
-	private String parent;
+	private String father;
 	private float radius;
 	private float velocity;
 	private float distanceToParent;
+	private float orbitalPeriod;
 	private float xCoord;
 	private float yCoord;
 	
-	public CelestialBody(String name, String type, String color, String parent, float radius, float velocity, float distanceToParent, float xCoord, float yCoord) {
+	public CelestialBody(String name, String type, String color, String parent, float radius, float velocity, float distanceToParent, float orbitalPeriod, float xCoord, float yCoord) {
 		
 		this.name = name;
 		this.type = type;
 		this.color = color;
-		this.parent = parent;
+		this.father = parent;
 		this.radius = radius;
 		this.velocity = velocity;
 		this.distanceToParent = distanceToParent;
+		this.orbitalPeriod = orbitalPeriod;
 		this.xCoord = xCoord;
 		this.yCoord = yCoord;
 		
@@ -50,12 +52,12 @@ public class CelestialBody {
 		this.color = color;
 	}
 
-	public String getParent() {
-		return parent;
+	public String getFather() {
+		return father;
 	}
 
-	public void setParent(String parent) {
-		this.parent = parent;
+	public void setFather(String father) {
+		this.father = father;
 	}
 
 	public float getRadius() {
@@ -98,9 +100,19 @@ public class CelestialBody {
 		this.yCoord = yCoord;
 	}
 	
-	public static void orbiting() {
+	public float getOrbitalPeriod() {
+		return orbitalPeriod;
+	}
+
+	public void setOrbitalPeriod(float orbitalPeriod) {
+		this.orbitalPeriod = orbitalPeriod;
+	}
+	
+	public void orbiting(float parentXCoord, float parentYCoord, float radius, float orbitalPeriod, float velocity, int time) {
 		
-		
+		float radian = velocity * time;
+		this.xCoord = (float) (parentXCoord + radius * Math.cos(radian));
+		this.yCoord = (float) (parentYCoord + radius * Math.sin(radian));
 		
 	}
 

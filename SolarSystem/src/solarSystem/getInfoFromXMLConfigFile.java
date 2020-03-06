@@ -25,8 +25,6 @@ public class getInfoFromXMLConfigFile {
 			
 			Element config = xmlDoc.getRootElement();
 			
-			System.out.println(config);
-			
 			List<Element> elements = config.elements();
 			
 			for(Element e : elements) {
@@ -35,7 +33,7 @@ public class getInfoFromXMLConfigFile {
 				
 				System.out.println(Float.parseFloat(e.elementText("velocity")));
 				
-				CelestialBody cb = new CelestialBody(e.elementText("name"), e.elementText("type"), e.elementText("color"), e.elementText("parent"), Float.parseFloat(e.elementText("radius")), Float.parseFloat(e.elementText("velocity")), Float.parseFloat(e.elementText("distanceToParent")), Float.parseFloat(e.elementText("xCoord")),Float.parseFloat(e.elementText("yCoord")));
+				CelestialBody cb = new CelestialBody(e.elementText("name"), e.elementText("type"), e.elementText("color"), e.elementText("parent"), Float.parseFloat(e.elementText("radius")), Float.parseFloat(e.elementText("velocity")), Float.parseFloat(e.elementText("distanceToParent")), Float.parseFloat(e.elementText("orbitalPeriod")), Float.parseFloat(e.elementText("xCoord")),Float.parseFloat(e.elementText("yCoord")));
 				
 				celestialBodies.add(cb);
 				

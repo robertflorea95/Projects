@@ -5,11 +5,12 @@
 		<type>star</type>
 		<color>yellow</color>
 		<parent>none</parent>
-		<radius>100</radius>
+		<radius>50</radius>
 		<velocity>0.000</velocity>
 		<distanceToParent>0</distanceToParent>
-		<xCoord>500</xCoord>
-		<yCoord>500</yCoord>
+		<orbitalPeriod>0</orbitalPeriod>
+		<xCoord>0</xCoord>
+		<yCoord>0</yCoord>
 	</CelestialBody>
 	<CelestialBody>
 		<name>Mercury</name>
@@ -19,6 +20,7 @@
 		<radius>5</radius>
 		<velocity>0.002</velocity>
 		<distanceToParent>15</distanceToParent>
+		<orbitalPeriod>1000.00</orbitalPeriod>
 		<xCoord>57.300</xCoord>
 		<yCoord>35.257</yCoord>
 	</CelestialBody>
@@ -30,6 +32,7 @@
 		<radius>10</radius>
 		<velocity>0.005</velocity>
 		<distanceToParent>30</distanceToParent>
+		<orbitalPeriod>2000.0</orbitalPeriod>
 		<xCoord>60.850</xCoord>
 		<yCoord>45.360</yCoord>
 	</CelestialBody>
